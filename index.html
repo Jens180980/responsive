@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Responsive | Jens</title>
+</head>
+<body>
+    
+    <section id="top">
+        <h1>Responsive <span>Design</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#top">HOME</a></li>
+                <li><a href="#mobil">MOBILE DEVICES</a></li>
+                <li><a href="#">SCREENS</a></li>
+                <li><a href="#">MEDIA QUERIES</a></li>
+                <li><a href="#">MOBILE FIRST</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="mobil">
+        <h2>HTML vises også på mobile enheder</h2>
+        <p>Dit website skal fungere på mobil-enheder, og mindre skærme.</p>
+        <img src="./img/Image-Adaptive.png" alt="Adaptive webdesign"><img src="./img/Image-Responsive.png" alt="Responsive webdesign"><img src="./img/Mobile-First.png" alt="Mobile First Webdesign">
+        <h2>Devices vs Desktop</h2>
+        <p>Omkring 2012 skiftede den andel af enheder der tilgik Internettet og Websites, fra "desktops" (Computere), til mobile enheder (Devices).<br>
+            I dag er det essentielt at din HTML ikke kun virker, men også er nemt at læse og navigere i på Mobile enheder.</p>
+        <p>Computere har oftest et "fysisk skærmområde", altså den faktuelle "størrelse" på minimum 15 tommer, (Inch'es).<br>
+            Mobiltelefoner har på trods en mindre størrelse ofte lige så stor "opløsning" (Pixel-tæthed), altså samme opløsning på mindre område.</p>
+        <h2>Begreber i Responsive Design</h2>
+        <ul>
+            <li> <span>Adaptive</span> (Groft sagt et "skræddersyet design" til definerede skærmstørrelser)</li>
+            <li> <span>Responsive</span> ("flydende og "device uafhængigt" "fits all", ikke så præcist?)</li>
+            <li> <span>Mobile First</span> ("Design strategi" hvor man tager udgangspunkt i Mobile devices)</li>
+        </ul>
+    </section>
+
+    <section id="screens">
+        <h2>Tommer og Pixels?</h2>
+        <h3>Lidt okm skærm-bredder og Viewports.</h3>
+        <p>Skærmbredder er i høj grad afhængig af den udvikling der er i gang på Hardware og specielt Mobil markedet.<br>
+            Mobiltelefoner og tablets kommer i et hav af størrelser og opløsninger, og kan vise HTML og APPs i både "Vandret" og "Lodret".</p>
+        <p>"Pixeltætheden" (ppi) er et udtryk for skærmens opløsning, og er ikke et udtryk for den fysiske størrelse. Mobiltelefoner har oftest lige så høj, eller højere "opløsning" end Computerskærme.<br>
+        Du bruger “MediaQueries” til at angive det antal pixels der svarer til den fysiske bredde.</p>
+        <img src="./img/Screen-Desktop.png" alt="Desktop screens"><img src="./img/Screen-Tablets.png" alt="Tablet screens"><img src="./img/Screen-Mobile.png" alt="Mobile screens">
+        <h2>Opløsning vs "Screen size"</h2>
+        <ul>
+            <li><span>Mobile Phones</span> Også kaldt "small devices", pixel tæthed omkring <span>300ppi</span> eller mere </li>
+            <li><span>Tablets</span> "Medium devices", pixel tæthed omkring <span>190ppi</span> eller mere </li>
+            <li><span>Desktops</span> pixel tæthed <span>72ppi</span> eller mere. (Macbook pro Retina 220.53ppi)</li>
+        </ul>
+    </section>
+
+    <section id="media">
+        <h2>Media Queries</h2>
+        <h3>Om Breakpoints og Devices</h3>
+        <img src="./img/Media-Screen.png" alt="Different screensizes">
+        <h3>Mediaqueries bruges til at angive det antal pixels på din Computer skærm, der svarer til den fysiske størrelse devicet har?</h3>
+        <p>@media screen and ( <span>max-width</span>: 800px) Træder i kraft <span>under 800px</span> på din cumputer skærm.</p>
+        <p>@media screen and (<span>min-width</span>: 800px) Træder i kraft <span>over 800px</span> på din cumputer skærm.</p>
+        <h2>Meta Viweport?</h2>
+        <h6><meta name="viewport" content="width=device-width, initial-scale=1.0"></h6>
+        <p>Hvis ikke du har “meta viewport” i dit head-tag så vil en nyere mobiltelefon vise dit website ud fra pixel tætheden (ppi) og IKKE “device-width”.</p>
+        <h3>Eksempel (Træder i kraft under 800 Pixels):</h3>
+        <span>@media screen and (max-width: 800px) {</span>
+        <p>body{<br>
+            background-color: red;<br>
+            }<br>
+        }</p>
+    </section>
+
+    <section id="mobilFirst">
+        <h2>Mobile First</h2>
+        <h3>Et udtryk for den "strategi" du bruger når du starter et projekt?</h3>
+        <img src="./img/Desktop-First.png" alt="Desktop first design"><img src="./img/Mobile-First.png" alt="Mobile first design">
+        <h2>Start "bagfra"?</h2>
+        <h3>Overblikket over det samlede projekt kan godt give udfordringer. Start evt. med “header og menu”?</h3>
+    </section>
+
+    <footer>
+        <p>Mere om fysiske størrelser:<br><a href="https://screensiz.es/">https://screensiz.es/</a></p>
+        <p>Mere om opløsninger:<br><a href="https://www.hobo-web.co.uk/best-screen-size/">https://www.hobo-web.co.uk/best-screen-size/</a></p>
+        <p>Statcounter:<br><a href="https://gs.statcounter.com/">https://gs.statcounter.com/</a></p>
+        <img src="./img/Logo.png" alt="Logo">
+    </footer>
+
+
+
+
+</body>
+</html>
