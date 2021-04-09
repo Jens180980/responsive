@@ -3,7 +3,7 @@
 ****************************/
 
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Condensed:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 *{
     margin:0;
@@ -18,18 +18,152 @@ body{
     --headerFont:'Oswald', sans-serif;
     --contentFont:'Roboto Condensed', sans-serif;
     width: 100%;
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    background: var(--bgColor);
     scroll-behavior: smooth;
+}
+main{
+  width: 100%;
+  margin: auto; 
+  font-family: var(--contentFont);    
+}
+main h2{
+    font-size: 2.2rem;
+    margin-top: 2rem;
+    font-weight: 400;
+    color: var(--highlightColor);
+}
+main h3{
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    color: var(--highlightColor);
+}
+main p {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    font-weight: 300;
+    color: var(--textColor);
+}
+section{
+    margin-bottom: 5rem;
+    margin-left: 0.5rem;
+}
+span{
+    color: var(--highlightColor);
 }
 img{
     width: 100%;
 }
 a{
+    font-family: var(--contentFont);
     text-decoration: none;
     color: var(--highlightColor);
 }
 ul{
     list-style: none;
 }
+ul{
+    margin: 1rem 0;
+}
+ul li{
+    color: var(--textColor);
+    margin: 0 0 1.5rem 2rem;
+    font-size: 1.5rem;
+}
+ul li::marker{
+    content:'- '
+}
+
+/****************************
+****    TOP SETTINGS    ****
+****************************/
+#top{
+    background: url(../img/Header-Image.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#top h1{
+    font-family: var(--headerFont);
+    font-weight: 500;
+    font-size: 4rem;
+    color: white;
+}
+#top h1 span{
+    color: #aedde3;
+}
+#top nav{
+    margin-top: 1.5em;
+    background-color: var(--footerBgColor);
+}
+#top nav ul li{
+    padding: 1em 0 1em 1em;
+    border-bottom: 2px solid white;
+}
+
+
+/****************************
+**  FOOTER SETTINGS  **
+****************************/
+footer{
+    background-color: var(--footerBgColor);
+    padding: 0.5rem 0 0 0.5rem;
+}
+footer p{
+    color: white;
+}
+footer img{
+    width: 50%;
+}
+
+/****************************
+****  TABLET SETTINGS   ****
+****************************/
+@media screen and (min-width: 700px){
+
+/** TOP **/
+#top nav ul{
+    display: flex;
+}
+#top nav ul li{
+    border:none;
+    padding: 0;
+    margin: 1rem;
+}
+#top nav ul li a{
+    font-size: 1rem;
+}
+
+/*MOBIL*/
+#mobil figure, #screens figure{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+/*FOOTER*/
+footer img{
+    width: 50%;
+    margin-left: 45%;
+}
+
+} /*END MEDIA QUERY*/
+
+
+/****************************
+**** DESKTOP SETTINGS   ****
+****************************/
+@media screen and (min-width: 1200px){
+
+/** TOP **/  
+    #top nav ul{
+        width: 50%;
+        margin-left: 60%;
+    }
+
+/** PARAGRAPHS **/
+
+.textWrap{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+}
+
+} /*END MEDIA QUERY*/
